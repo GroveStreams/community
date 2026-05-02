@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ❓ Question or "How do I…"
+    url: https://github.com/GroveStreams/community/discussions/new?category=q-a
+    about: Use Discussions Q&A for usage questions. Issues are for bugs only.
+  - name: 💡 Feature request or idea
+    url: https://github.com/GroveStreams/community/discussions/new?category=ideas
+    about: Suggest new features in Discussions Ideas, where the community can upvote.
+  - name: 🛠 Show what you've built
+    url: https://github.com/GroveStreams/community/discussions/new?category=show-and-tell
+    about: Share dashboards, integrations, or projects in Show and tell.
+  - name: 📧 Account, billing, or private support
+    url: mailto:support@grovestreams.com
+    about: For anything sensitive or account-specific, email support directly.
+  - name: 📚 Documentation
+    url: https://www.grovestreams.com/developers/api.html
+    about: Most "how do I…" questions are covered in the docs.
