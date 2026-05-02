@@ -1,0 +1,102 @@
+name: 🐞 Bug report
+description: Something is broken, behaves unexpectedly, or returns wrong results.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report. The more detail you give, the faster we can reproduce and fix it.
+
+        **Before submitting:** please [search existing Issues](../issues?q=is%3Aissue) — your bug may already be reported.
+
+        **Do not paste API keys, session tokens, organization UIDs tied to confidential data, or any customer PII in this public report.** If reproducing the bug requires sharing private data, file the public Issue with a brief description and email details to support@grovestreams.com referencing the Issue number.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug — what you expected vs. what actually happened.
+      placeholder: |
+        Expected: ...
+        Actual: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Exact steps, clicks, GS SQL, or API requests needed to reproduce.
+      placeholder: |
+        1. Go to ...
+        2. Run this GS SQL: ```...```
+        3. See error: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Relevant GS SQL, DDL, or API request
+      description: Paste any relevant code. It will be automatically formatted as a code block.
+      render: sql
+    validations:
+      required: false
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message or screenshot
+      description: Copy-paste the exact error (don't paraphrase). Drag screenshots into this box if visual.
+      placeholder: Paste error message here...
+    validations:
+      required: false
+
+  - type: input
+    id: timestamp
+    attributes:
+      label: Approximate timestamp (and timezone)
+      description: When did this happen? Helps us cross-reference server logs.
+      placeholder: e.g. 2026-05-01 14:23 CST
+    validations:
+      required: false
+
+  - type: dropdown
+    id: region
+    attributes:
+      label: Region
+      description: Which GroveStreams region is your organization in?
+      options:
+        - US
+        - EU
+        - Other / not sure
+        - Self-hosted / private cluster
+    validations:
+      required: false
+
+  - type: input
+    id: plan
+    attributes:
+      label: Plan tier
+      description: e.g. Free trial, Growth, Professional, Enterprise. Optional but helpful.
+      placeholder: e.g. Growth
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & version
+      description: Only required for UI bugs. e.g. "Chrome 134 on macOS"
+      placeholder: e.g. Chrome 134 on macOS 15.2
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Anything else that might help — recent changes you made, related Issues, workarounds you've tried.
+    validations:
+      required: false
