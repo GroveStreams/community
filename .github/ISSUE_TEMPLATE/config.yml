@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: ❓ Question or "How do I…"
+  - name: ❓ Platform question or "How do I…" (Studio, GS SQL, API)
     url: https://github.com/GroveStreams/community/discussions/new?category=q-a
-    about: Use Discussions Q&A for usage questions. Issues are for bugs only.
+    about: Use Discussions Q&A for platform usage questions. Issues are for bugs only.
+  - name: 🧩 GS Apps question (GS VEE, GS Rate, GS Bill, GS Settle)
+    url: https://github.com/GroveStreams/community/discussions/new?category=gs-apps
+    about: Questions and ideas about the GS Apps. Each app's Help → Troubleshooting page covers the common ones.
   - name: 💡 Feature request or idea
     url: https://github.com/GroveStreams/community/discussions/new?category=ideas
     about: Suggest new features in Discussions Ideas, where the community can upvote.

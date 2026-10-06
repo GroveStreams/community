@@ -1,7 +1,7 @@
-name: 🐞 Bug report
-description: Something is broken, behaves unexpectedly, or returns wrong results.
+name: 🐞 Platform bug report (Studio, GS SQL, API, feeds, dashboards)
+description: The GroveStreams platform — Studio, GS SQL, the API, feeds, derived streams, dashboards. For GS VEE, GS Rate, GS Bill or GS Settle use the GS Apps form.
 title: "[Bug]: "
-labels: ["bug", "needs-triage"]
+labels: ["bug", "platform", "needs-triage"]
 body:
   - type: markdown
     attributes:

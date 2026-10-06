@@ -1,0 +1,93 @@
+name: 🧩 GS Apps bug report (GS VEE, GS Rate, GS Bill, GS Settle)
+description: Something is broken, behaves unexpectedly, or shows a wrong result in one of the GS Apps.
+title: "[GS Apps]: "
+labels: ["bug", "gs-apps", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. The more detail you give, the faster we can reproduce and fix it.
+
+        **Before submitting:** [search existing Issues](../issues?q=is%3Aissue+label%3Ags-apps) and the app's Help → Troubleshooting page.
+
+        **Do not paste API keys, session tokens, customer names, meter or account data in this public report.** If reproducing it needs private data, file a short public Issue and email the details to support@grovestreams.com quoting the Issue number.
+
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - GS VEE
+        - GS Rate
+        - GS Bill
+        - GS Settle
+        - More than one / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: screen
+    attributes:
+      label: Screen or API endpoint
+      description: Where it happened, e.g. "Invoices → Generate", "Rulesets editor", "GET /charges".
+      placeholder: e.g. Invoices → Generate
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you expected and what actually happened. Quote any message exactly, including its code (e.g. `rate_settling`).
+      placeholder: |
+        Expected: ...
+        Actual: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: org-kind
+    attributes:
+      label: Where did it happen?
+      options:
+        - A sandbox / demo organization
+        - My own organization
+        - Not sure
+    validations:
+      required: false
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message or screenshot
+      description: Drag screenshots in here. Blur or crop any private data first.
+    validations:
+      required: false
+
+  - type: input
+    id: timestamp
+    attributes:
+      label: Approximate time (and time zone)
+      description: Helps us find it in the logs.
+      placeholder: e.g. 2026-10-06 14:23 CDT
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device (for screen problems)
+      placeholder: e.g. Chrome 129 on Windows, Safari on iPhone
+    validations:
+      required: false
